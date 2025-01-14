@@ -1,0 +1,7 @@
+services:
+  amass-api:
+    #build: .
+    image: enrikenur/amass-api:latest
+    container_name: amass-api
+    ports:
+      - "5000:5000"
