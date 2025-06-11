@@ -1,7 +1,10 @@
 services:
   amass-api:
-    #build: .
-    image: enrikenur/amass-api:latest
+    build: .
+    # image: enrikenur/amass-api:latest
     container_name: amass-api
     ports:
       - "5000:5000"
+    volumes:
+      - ./data:/app/data
+      - ./results:/results
