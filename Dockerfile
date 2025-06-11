@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Amass v4.2.0
-RUN wget https://github.com/OWASP/Amass/releases/download/v3.19.2/amass_linux_amd64.zip \
+RUN wget https://github.com/OWASP/Amass/releases/download/v4.2.0/amass_linux_amd64.zip \
     && unzip amass_linux_amd64.zip \
     && mv amass_linux_amd64/amass /usr/local/bin/amass \
     && rm -rf amass_linux_amd64.zip amass_linux_amd64
