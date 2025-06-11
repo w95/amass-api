@@ -25,7 +25,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 
 # Expose the port
-EXPOSE 5000
+EXPOSE 8001
 
 # Set environment variables
 ENV FLASK_ENV=production

@@ -391,7 +391,7 @@ class TaskCreate(Resource):
             return {"status": "error", "message": str(e)}, 500
 
 @api.route('/task/<string:task_id>')
-class TaskStatus(Resource):
+class TaskDetail(Resource):
     @api.doc('get_task_status')
     @api.response(200, 'Task status retrieved successfully')
     @api.response(404, 'Task not found')
@@ -513,5 +513,5 @@ if __name__ == '__main__':
     # Start the task worker thread
     start_task_worker()
     
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=8001)
 
