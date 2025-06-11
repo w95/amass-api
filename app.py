@@ -349,7 +349,7 @@ def get_task_status(task_id):
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 
-@app.route('/api/amass/queue', methods=['GET'])
+@app.route('/queue', methods=['GET'])
 def get_queue_status():
     """Get the current queue status."""
     try:
@@ -365,7 +365,7 @@ def get_queue_status():
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 
-@app.route('/api/amass/tasks', methods=['GET'])
+@app.route('/tasks', methods=['GET'])
 def get_all_tasks():
     """Get all tasks."""
     try:

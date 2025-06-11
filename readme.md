@@ -138,12 +138,12 @@ curl http://localhost:5000/task/uuid-task-id
 
 ### Queue Management
 
-#### `GET /api/amass/queue`
+#### `GET /queue`
 View the current queue status.
 
 **Example:**
 ```bash
-curl http://localhost:5000/api/amass/queue
+curl http://localhost:5000/queue
 ```
 
 **Response:**
@@ -156,12 +156,12 @@ curl http://localhost:5000/api/amass/queue
 }
 ```
 
-#### `GET /api/amass/tasks`
+#### `GET /tasks`
 List all tasks with their basic information.
 
 **Example:**
 ```bash
-curl http://localhost:5000/api/amass/tasks
+curl http://localhost:5000/tasks
 ```
 
 **Response:**
@@ -253,7 +253,7 @@ CREATE TABLE tasks (
 
 3. **Check queue status:**
    ```bash
-   curl http://localhost:5000/api/amass/queue
+   curl http://localhost:5000/queue
    ```
 
 4. **Monitor task progress:**
@@ -263,7 +263,7 @@ CREATE TABLE tasks (
 
 5. **List all tasks:**
    ```bash
-   curl http://localhost:5000/api/amass/tasks
+   curl http://localhost:5000/tasks
    ```
 
 ## Error Handling
