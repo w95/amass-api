@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y \
 # Install Amass v4.2.0
 RUN wget https://github.com/OWASP/Amass/releases/download/v4.2.0/amass_linux_amd64.zip \
     && unzip amass_linux_amd64.zip \
-    && mv amass_linux_amd64/amass /usr/local/bin/amass \
-    && rm -rf amass_linux_amd64.zip amass_linux_amd64
+    && mv amass_Linux_amd64/amass /usr/local/bin/amass \
+    && rm -rf amass_linux_amd64.zip amass_Linux_amd64
 
 # Copy application requirements and install Python dependencies
 COPY requirements.txt .
